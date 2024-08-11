@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+/*
+theme Name: koiOne
+Author: KoiKoi
+Description: this theme mede by KoiKoi for Designer
+version: 1.0.0;
+*/
+
+/*全デフォルトCSS*/
+body{	
+	/*フォントの指定*/
+	font-family: Meiryo, “メイリオ”, “Yu Gothic”, “游ゴシック”, YuGothic, “Helvetica Neue”, Helvetica, sans-serif;
+	/*サイト全体のフォントサイズを指定*/
+	font-size: 16px;
+	/*行間の指定*/
+	line-height: 1.7;
+	/*サイト全体にかかるmarginをリセット*/
+	margin: 0;
+	/*サイト全体にかかるpaddingをリセット*/
+	padding: 0;
+	/*サイトのデフォルトとなる文字の色を指定*/
+	color: #FFFFFF!important;
+	/*サイトのデフォルトとなる背景の色を指定*/
+	background-color: #282828!important;
+}
+
+/*見出しを全て太字*/
+h1, h2, h3, h4, h5{
+	font-weight:5 bold;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.clear{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+header{
+	background-color: #141414;
+	height: 170px;
+}
+
+/*--------ヘッダー CSS--------*/
+.header-inner, .container, .footer-inner{
+	max-width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+
+	padding: 10px;
+	-webkit-box-sizing: border-box;/*通常border-box*/
+	-moz-box-sizing: border-box;/*Google chrome, safari用 border-box 	box-sizing: border-box;/*Firefox用　border-box*/
+}
+
+.header-inner{
+	position: relative;
+}
+
+.name-title{
+	text-align: center;
+	font-family: 'Courgette'!important;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(15%) translateX(-50%);
+}
+
+.title{
+	text-align: center;
+	padding: 35px 0;
+}
+
+.title h1, h2, h3{
+	font-family: 'Courgette'!important;
+	margin: 0;
+	line-height: 1;
+}
+
+.ar8c-content, .sketch-content,
+.aboutme-content, .education-content{
+	width: 100%;
+	margin-top: 80px;
+	border-top: solid #FFFFFF;
+}
+
+.experience{
+	padding-bottom: 75px;
+}
+
+.movie-title{
+	float: left;
+	margin-right: 25px;
+}
+
+.schools p{
+	font-size: 1.6em;
+}
+
+.skill-content, .contact-content{
+	width: 45%;
+	margin: 15px;
+	padding: 15px 25px;
+	background-color: #141414;
+}
+
+.tool_logo img{
+	height: 50px!important;
+}
+
+.contact-content p{
+	font-size: 1.25em;
+}
+
+.sns-box{
+	float: left;
+}
+
+/*--------sns CSS--------*/
+.sns-btn:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.sns-btn ul{
+	list-style: none;
+	margin-left: 25px;
+}
+
+.sns-btn ul:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.sns-btn li{
+	float: left;
+	margin-left: 10px;
+}
+
+.sns-btn li a{
+	display: block;
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	border: solid 1px #464646;
+	border-radius: 50%;
+}
+
+/*--------メニューボタン　CSS
+.header-inner{
+	position: relative;
+}
+
+#navbutton{
+	position: fixed;
+	top: 30px;
+	left: -10px;
+	width: 100px;
+	height: 100px;
+	padding: 15px 15px;
+
+	cursor: pointer;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+ 	border-radius: 50%;
+	background-color: #fff; 
+}
+
+.navbutton:hover{
+	background-color: #ddd;
+}
+
+.navbutton:focus{
+	outline: none;
+}
+
+#navbutton i{
+	font-size : 2em;
+	color: #333;
+}
+--------*/
+
+/*-------- ヘッダーナビ　CSS
+#header-nav{
+	display: none;
+	background-color: #464646;
+}
+
+.header-nav ul{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.header-nav li{
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}
+
+.header-nav li a{
+	display: block;
+	padding: 15px 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.header-nav li a:hover{
+	opacity: 0.8;
+	z-index: 2;
+}
+--------*/
+
+/*--------スマフォ用　追加CSS
+@media(max-width: 1023px){
+	.header-nav > ul{
+		background-color: #464646;
+		opacity: 0.8;
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.header-nav li{
+		width: 45%;
+	}
+}
+--------*/
+/*--------ヘッダーナビ　CSS(PC用)
+@media (min-width: 1024px) {
+	#header-nav {
+		display: block!important;
+	}
+
+	.header-nav{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.header-nav > ul{
+		margin: 0 auto;
+	}
+
+	.header-nav ul:after{
+		display: block;
+		clear: both;
+		content: '';
+	}
+
+	.header-nav li{
+		display: inline-block;
+		width: auto;
+		float: none;
+	}
+
+	.header-nav li a{
+		font-size: 1.1em;
+		padding: 5px 10px;
+	}
+
+	#navbutton{
+		display: none;
+	}
+}
+--------*/
+
+/*--------ナビゲーション　ドロップダウン　CSS
+
+.sub-menu {
+	width: 150px;
+	margin: 0 auto;
+	position: absolute;
+	display: none;
+	border-top: none;
+}
+ 
+.sub-menu li {
+	width: 100%;
+	background-color: #ccc;
+	text-align: center;
+  display: block;
+  float: none;
+  padding: 0;
+}
+ 
+.header-nav li:hover .sub-menu {
+  display: block;
+}
+ 
+.sub-menu li a:before {
+  color: #333;
+}
+ 
+.sub-menu li a {
+	width: 100%;
+	display: inline-block;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+ 
+.sub-menu li a:hover {
+  background-color: #000;
+}
+@media(max-width: 1023px){
+	.sub-menu{
+		left: 58%;
+	}
+}
+
+@media (min-width: 1024px) {
+ .sub-menu {
+    width: 200px;
+    border-top: 1px solid #eee;
+  }
+}
+--------*/ 
+
+/*--------フッター--------*/
+
+footer{
+	background-color: transparent;
+}
+
+.footer-inner p{
+	text-align: center;
+}
+
+.footer-nav{
+	margin-bottom: 20px;
+}
+
+.footer-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-nav ul:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.footer-nav li{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.footer-nav li a{
+	font-size: .9em;
+	display: block;
+	padding: 10px 5px;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*コピーライト*/
+.copyright p{
+	font-size: .9em;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+/*PC用 CSS*/
+@media(min-width: 768px){
+	.footer-nav li{
+		width: auto;
+		text-align: left;
+	}
+
+	.footer-nav li a{
+		font-size: 1em;
+		padding: 10px 20px;
+	}
+}
